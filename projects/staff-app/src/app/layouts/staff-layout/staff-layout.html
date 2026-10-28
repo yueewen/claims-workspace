@@ -1,0 +1,20 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <span class="navbar-brand">Claims Staff Portal</span>
+    <div class="navbar-nav me-auto">
+      <a class="nav-link" routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+      <a class="nav-link" routerLink="/claims-queue" routerLinkActive="active">Claims Queue</a>
+      <a class="nav-link" routerLink="/my-claims" routerLinkActive="active">My Claims</a>
+      <a class="nav-link" routerLink="/team-overview" routerLinkActive="active">Team Overview</a>
+    </div>
+    <div class="d-flex align-items-center text-white gap-3">
+      <span>{{ authService.currentUser()?.username }}</span>
+      <button type="button" class="btn btn-outline-light btn-sm" (click)="logout()">Log out</button>
+    </div>
+  </div>
+</nav>
+
+<main class="container-fluid py-4">
+  <router-outlet></router-outlet>
+</main>
