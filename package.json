@@ -4,7 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:claimant": "ng serve claimant-app --port 4200",
+    "start:staff": "ng serve staff-app --port 4201",
     "build": "ng build",
+    "build:claimant": "ng build claimant-app",
+    "build:staff": "ng build staff-app",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

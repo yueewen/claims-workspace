@@ -2,15 +2,21 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.24.
 
-## Development server
+## Development servers
 
-To start a local development server, run:
+Start the claimant app on `http://localhost:4200/`:
 
 ```bash
-ng serve
+npm run start:claimant
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Start the staff app on `http://localhost:4201/`:
+
+```bash
+npm run start:staff
+```
+
+Each application automatically reloads whenever you modify its source files.
 
 ## Code scaffolding
 
@@ -28,13 +34,14 @@ ng generate --help
 
 ## Building
 
-To build the project run:
+Build either application for production:
 
 ```bash
-ng build
+npm run build:claimant
+npm run build:staff
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Build artifacts are stored in the `dist/` directory. The generic `npm start` and `npm run build` scripts are retained for the default Angular project.
 
 ## Running unit tests
 
